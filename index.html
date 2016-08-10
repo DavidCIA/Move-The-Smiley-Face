@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	</head>
-	<body>
-		<h1> MOVE THE SMILEY FACE </h1>
+	<script src="index.js"></script>
+	<link href="index.css" rel="stylesheet"> </link>
+</head>
+<body onload="startGame()">
+	<h1> MOVE THE SMILEY FACE </h1>
+
+<div style="text-align:center;width:480px;">
+  <button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">UP</button><br><br>
+  <button onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')">LEFT</button>
+  <button onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')">RIGHT</button><br><br>
+  <button onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')">DOWN</button>
+</div>
+
 	</body>
 </html>
